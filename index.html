@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>מסע יום ההולדת</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Secular+One&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- קישוטי רקע -->
+    <img src="44307eb4a120068376a9997215ae85f3.gif" class="sticker st1" alt="" aria-hidden="true" />
+    <img src="%D7%94%D7%95%D7%A8%D7%93%D7%94.jfif" class="sticker st2" alt="" aria-hidden="true" />
+    <img src="%D7%94%D7%95%D7%A8%D7%93%D7%94%20(1).jfif" class="sticker st3 framed" alt="" aria-hidden="true" />
+    <img src="44307eb4a120068376a9997215ae85f3.gif" class="sticker st4" alt="" aria-hidden="true" />
+    <span class="bg-deco deco1" aria-hidden="true">🎀</span>
+    <span class="bg-deco deco2" aria-hidden="true">💖</span>
+    <span class="bg-deco deco3" aria-hidden="true">🌸</span>
+    <span class="bg-deco deco4" aria-hidden="true">✨</span>
+
+    <!-- מעבר עמוד ורוד -->
+    <div id="transition" aria-hidden="true">
+      <div class="tr-ring"></div>
+      <img src="44307eb4a120068376a9997215ae85f3.gif" class="tr-kitty" alt="" />
+      <div class="tr-hearts">
+        <span>💖</span><span>🎀</span><span>💕</span><span>🌸</span><span>💗</span><span>✨</span>
+      </div>
+    </div>
+
+    <!-- שיר רקע -->
+    <audio id="bg-music" src="renewwed_capella_-_Where_The_Hell_Is_My_Husband_(mp3.pm).mp3" loop preload="auto"></audio>
+    <button id="music-btn" aria-label="השתקת מוזיקה">🔊</button>
+
+    <!-- מסך פתיחה: מעטפה -->
+    <div id="intro">
+      <p class="intro-to">יש לך הודעה חדשה, שקד 💌</p>
+      <button class="envelope" aria-label="פתיחת המעטפה">
+        <span class="env-back"></span>
+        <span class="env-letter">
+          <span>💖</span>
+          <strong>הזמנה למסע</strong>
+          <small>יום הולדת שמח</small>
+        </span>
+        <span class="env-pocket"></span>
+        <span class="env-flap"></span>
+        <span class="env-seal">💗</span>
+      </button>
+      <p class="intro-hint">לחץ על המעטפה כדי לפתוח 🎀</p>
+    </div>
+
+    <!-- עמוד 1: ההזמנה -->
+    <section id="page-1" class="page active">
+      <div class="card">
+        <span class="step">תחנה 1 מתוך 4</span>
+        <img alt="אנחנו" class="photo" />
+        <h2 class="question">
+          שקד, נטף לימון מוסיף המון…<br>
+          אבל מה דעתך להוסיף קצת הרפתקאות לחיים?<br>
+          <span class="highlight">האם תרצה לצאת איתי למסע יום ההולדת שלך? 🎂</span>
+        </h2>
+        <div class="btn-group">
+          <button class="yes-btn">ברור שאני מסכים לנסוע עם החברה הכוסית והפצצצה שלי 🔥</button>
+          <button class="no-btn">מעדיף להישאר בבית</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- עמוד 2: באיזה מוד -->
+    <section id="page-2" class="page">
+      <div class="card">
+        <span class="step">תחנה 2 מתוך 4</span>
+        <img alt="אנחנו" class="photo" />
+        <h2 class="question">
+          שקד, לפני שאנחנו יוצאים להרפתקה,<br>
+          חשוב לי לדעת באיזה מוד אתה מגיע? 😏
+        </h2>
+        <div class="options">
+          <button class="option-btn" data-mode="חתיך, מבושם ומוכן לכבוש את העולם">
+            <span class="opt-letter">א</span>
+            <span>חתיך, מבושם ומוכן לכבוש את העולם.</span>
+          </button>
+          <button class="option-btn" data-mode="מתרגש, סקרן וסומך על מי שתכננה">
+            <span class="opt-letter">ב</span>
+            <span>מתרגש, סקרן ובעיקר סומך על מי שתכננה את כל זה.</span>
+          </button>
+          <button class="option-btn" data-mode="מוכן להתאהב מחדש, לאכול טוב וליהנות">
+            <span class="opt-letter">ג</span>
+            <span>מוכן להתאהב בי מחדש, לאכול טוב וליהנות מכל רגע.</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- עמוד 3: אריזה -->
+    <section id="page-3" class="page">
+      <div class="card">
+        <span class="step">תחנה 3 מתוך 4</span>
+        <img alt="אנחנו" class="photo" />
+        <h2 class="question">הגיע הזמן לארוז! 🧳</h2>
+        <p class="subtitle">בטח אתה שואל את עצמך מה אתה צריך… אז לא הרבה:</p>
+        <ul class="packing">
+          <li><label><input type="checkbox" /> <span>🩳 בגד ים</span></label></li>
+          <li><label><input type="checkbox" /> <span>👟 בגדים נוחים לנסיעה שלנו</span></label></li>
+          <li><label><input type="checkbox" /> <span>👔 בגדים יפים</span></label></li>
+          <li><label><input type="checkbox" /> <span>🩲 תחתונים <small>(מרגיש לי שלא תצטרך אותם הרבה 😉)</small></span></label></li>
+        </ul>
+        <button class="go-btn">יאללה, בוא נצא למסע ✈️</button>
+      </div>
+    </section>
+
+    <!-- עמוד 4: כרטיס עלייה -->
+    <section id="page-4" class="page">
+      <div class="card ticket">
+        <div class="ticket-head">
+          <span>✈️ BOARDING PASS</span>
+          <span>מסע יום ההולדת</span>
+        </div>
+        <img alt="אנחנו" class="photo" />
+        <div class="ticket-grid">
+          <div><small>נוסע</small><strong>שקד</strong></div>
+          <div><small>יעד</small><strong>סוד 🤫</strong></div>
+          <div><small>שעת יציאה</small><strong>12:00</strong></div>
+          <div><small>מוד</small><strong id="mode-text">—</strong></div>
+        </div>
+        <div class="announcement">
+          <h3>🚨 הודעה חשובה לנוסע!</h3>
+          <p>אין אופציה להתחרט, סורי 😂</p>
+          <p>שעת היציאה: <strong>12:00 בדיוק!</strong></p>
+          <p>איחורים לא מתקבלים, אבל נשיקות בהחלט כן. 😘❤️</p>
+          <p class="final-line">נא להגיע חתיך ומוכן להרפתקה!</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
